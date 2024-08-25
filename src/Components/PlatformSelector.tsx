@@ -4,8 +4,8 @@ import usePlatforms from '../hooks/usePlatforms';
 import { Platform } from '../hooks/useGames';
 
 interface Prompt {
-  onSelectPlatform: (platform: Platform) => void; 
   selectedPlatform: Platform | null;
+  onSelectPlatform: (platform: Platform) => void; 
 }
 
 const PlatformSelector = ({onSelectPlatform, selectedPlatform}: Prompt) => {
